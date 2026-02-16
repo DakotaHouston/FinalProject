@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dak's Jewlery</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="contact.html"><b>Contact</b></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Products</a></li>
+        </ul>
+        <button class="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+    </nav>
+    <header><h1 id="banner-text"> Dak's Jewlery</h1></header>
+    <main>
+        <form>
+            <br><h3>Personal Information:</h3><br>
+            <input type="text" id="first-name" first name="first name" placeholder="First Name">
+            <input type="text" id="last-name" last name="last name" placeholder="Last Name" required><br>
+            <input type="text" id="email" email="email" placeholder="Email"><br>
+            <h3>Order Items:</h3>
+            <div class="table container">
+                <table>
+                    <tr>
+                        <td><input type="checkbox" id="Gold Neclace" name="Jewlery" value="Gold Neclace">
+                        <label for="Gold Neclace">Gold Neclace</label></td>
+                        <td><input type="checkbox" id="Gold Braclet" name="Jewlery" value="Gold Braclet">
+                        <label for="Gold Braclet">Gold Braclet</label></td>
+                        <td><input type="checkbox" id="Gold Ring" name="Jewlery" value="Gold Ring">
+                        <label for="Gold Ring">Gold Ring</label></td>
+                        <td><input type="checkbox" id="Gold Earrings" name="Jewlery" value="Gold Earrings">
+                        <label for="Gold Earrings">Gold Earrings</label><br></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="Silver Neclace" name="Jewlery" value="Silver Neclace">
+                        <label for="Silver Neclace">Silver Neclace</label></td>
+                        <td><input type="checkbox" id="Silver Braclet" name="Jewlery" value="Silver Braclet">
+                        <label for="Silver Braclet">Silver Braclet</label></td>
+                        <td><input type="checkbox" id="Silver Ring" name="Jewlery" value="Silver Ring">
+                        <label for="Silver Ring">Silver Ring</label></td>
+                        <td><input type="checkbox" id="Silver Earrings" name="Jewlery" value="Silver Earrings">
+                        <label for="Silver Earrings">Silver Earrings</label><br></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="Pearl Neclace" name="Jewlery" value="Pearl Neclace">
+                        <label for="Pearl Neclace">Pearl Neclace</label></td>
+                        <td><input type="checkbox" id="Pearl Braclet" name="Jewlery" value="Pearl Braclet">
+                        <label for="Pearl Braclet">Pearl Braclet</label></td>
+                        <td><input type="checkbox" id="Pearl Ring" name="Jewlery" value="Pearl Ring">
+                     <label for="Pearl Ring">Pearl Ring</label></td>
+                        <td><input type="checkbox" id="Pearl Earrings" name="Jewlery" value="Pearl Earrings">
+                        <label for="Pearl Earrings">Pearl Earrings</label><br></td>
+                    </tr>
+                </table><br>
+            </div>
+            <h3>Card Information:</h3><br>
+            <input type="text" id="Card-Number" Card Number="Card Number" placeholder="Card Number">
+            <input type="text" id="Card-Expiration" Card Expiration="Card Expiration" placeholder="Card Expiration" required>
+            <input type="text" id="CVV" CVV="CVV" placeholder="CVV" required><br><br>
+            <label for="Remember card">Remember this card for future use.</label>
+            <input type="radio" id="Remember card" value="Remember card"><br><br>
+            <textarea id="Extra" placeholder="Extra comments and add ons..."></textarea><br>
+            <input type="submit" id="Submit" value="submit">
+        </form>
+    </main>
+</body>
+<style>
+    .table-container {
+	    width: 100%;
+	    overflow-x: auto;
+    }
+    ::placeholder {
+    	color: #ffffff;
+    }
+    th {
+    	border-right: 3px solid rgb(255, 255, 255);
+    	padding: 8px;
+    	text-align: center;
+    }
+    table,
+    td {
+    	background-color: #37206b;
+	    color: #ffffff;
+	    border: 2px solid #ffffff;
+	    border-collapse: collapse;
+	    text-align: left;
+	    padding: 3px;
+	    font-size: 122%;
+    }
+    label[for="last-name"] {
+    	display: flex;
+    }
+    #Extra {
+    	width: 99%;
+    	height: 90px;
+    	box-sizing: border-box;
+    	border: 2px solid #ffffff;
+    	background-color: #37206b;
+    	color: #ffffff;
+    }
+    input[type="submit"],
+    button[type="submit"] {
+    	width: 10%;
+    	display: inline-block;
+    	margin-right: 10px;
+    	padding: 8px;
+    	border: 2px solid #ffffff;
+    	box-sizing: border-box;
+    	color: #ffffff;
+    }
+    #CVV,
+    #Card-Expiration,
+    #Card-Number {
+    	width: 31%;
+    	display: inline-block;
+    	margin-right: 10px;
+    	padding: 8px;
+    	border: 2px solid #ffffff;
+    	box-sizing: border-box;
+    }
+    #first-name,
+    #last-name {
+    	width: 48%;
+    	display: inline-block;
+    	margin-right: 10px;
+    	padding: 8px;
+    	border: 2px solid #ffffff;
+    	box-sizing: border-box;
+    }
+    #email {
+    	width: 99%;
+    	display: block;
+    	margin-top: 10px;
+    	padding: 8px;
+    	border: 2px solid #ffffff;
+    	box-sizing: border-box;
+    }
+    main {
+    	display: flex;
+    	justify-content: center;
+    	align-items: center;
+    }
+    body {
+    	background-color: #dadada;
+    }
+    header {
+    	color: rgb(0, 0, 0);
+    	background-image: url(images/Jewlery.jpeg);
+    	filter: blur(0.03em);
+    	display: flex;
+    	align-items: center;
+    	justify-content: center;
+    }
+    input {
+    	background-color: #37206b;
+        color: #ffffff;
+    }
+    * {
+    	margin: 0;
+    	padding: 0;
+    	box-sizing: border-box;
+    }
+    .navbar {
+    	display: flex;
+    	justify-content: space-between;
+    	align-items: center;
+    	background-color: #333;
+    	padding: 10px 20px;
+    }
+    .nav-links {
+    	list-style: none;
+    	display: flex;
+    }
+    .nav-links a {
+    	color: white;
+    	text-decoration: none;
+    	padding: 10px 15px;
+    	display: block;
+    }
+    .menu-toggle {
+    	display: none;
+    	background: none;
+    	border: none;
+    	color: white;
+    	font-size: 2rem;
+    	cursor: pointer;
+    }
+    @media (max-width: 768px) {
+    	.menu-toggle {
+    		display: block;
+    	}
+    	.nav-links {
+    		display: none;
+    		flex-direction: column;
+    		position: absolute;
+    		top: 60px;
+    		left: 0;
+    		width: 100%;
+    		background-color: #444;
+    	}
+    	.nav-links.active {
+    		display: flex;
+    	}
+    }
+</style>
+<script>
+    const toggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    toggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+    });
+</script>
+</html>
